@@ -20,7 +20,7 @@ const BLOG = {
   // 3.14.1版本后，欢迎语在此配置，英文逗号隔开 ,  即可支持多个欢迎语打字效果。
   GREETING_WORDS:
     process.env.NEXT_PUBLIC_GREETING_WORDS ||
-    'Hi，这里是枝蔓食品的官方网站3',
+    'Hi，这里是枝蔓食品的官方网站',
 
   CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || false, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
 
@@ -31,7 +31,7 @@ const BLOG = {
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
   CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '', // 邮箱地址 例如mail@tangly1024.com
-  CONTACT_PHONE: process.env.NEXT_PUBLIC_CONTACT_PHONE || '18710265690', // 电话
+  CONTACT_PHONE: process.env.NEXT_PUBLIC_CONTACT_PHONE || '18601192649', // 电话
   CONTACT_WEIBO: process.env.NEXT_PUBLIC_CONTACT_WEIBO || 'https://weibo.com/u/6775101903', // 你的微博个人主页
   CONTACT_WHATSAPP: process.env.NEXT_PUBLIC_CONTACT_WHATSAPP || '',
   CONTACT_TWITTER: process.env.NEXT_PUBLIC_CONTACT_TWITTER || '', // 你的twitter个人主页
