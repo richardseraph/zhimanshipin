@@ -14,7 +14,7 @@ export default function PostHeader({ post }) {
       <LazyImage priority={true} src={headerImage} className='w-full h-full object-cover object-center absolute top-0'/>
 
       <header id='article-header-cover'
-            className="bg-black bg-opacity-70 absolute top-0 w-full h-96 py-10 flex justify-center items-center ">
+            className="bg-transparent absolute top-0 w-full h-96 py-10 flex justify-center items-center ">
 
         <div className='mt-10'>
             <div className='mb-3 flex justify-center'>
