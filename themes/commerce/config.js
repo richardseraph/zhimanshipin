@@ -4,7 +4,7 @@ const CONFIG = {
 
   COMMERCE_TEXT_CENTER_TITLE: '枝蔓食品', // 中间产品区块标题
   COMMERCE_TEXT_CENTER_DESCRIPTION:
-    '立志做最良心最健康的国产食品可乐企业', // 中间产品区块文字描述
+    '立志做良心健康的国产食品可乐企业', // 中间产品区块文字描述
   COMMERCE_TEXT_CENTER_CATEGORY_TITLE: '信息', // 左侧分类标题
   COMMERCE_TEXT_FOOTER_TITLE: '联系我们', // COMMERCE主题页脚文案标题；按Shift+Enter键可以换行
   COMMERCE_TEXT_FOOTER_MENU_1: '关于我们', // COMMERCE主题页脚左侧菜单标题1
