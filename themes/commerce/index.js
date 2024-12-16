@@ -252,29 +252,23 @@ const LayoutSlug = props => {
             className='overflow-x-auto flex-grow mx-auto md:w-full md:px-5 '>
             {/* 预览区块 */}
 
+            {post?.type === 'Post' && (
+              <div className='flex md:flex-row flex-col w-full justify-between py-4'>
+                <div
+                  id='left-img'
+                  className='md:w-1/4 flex justify-center items-center border'>
+                  <LazyImage
+                    src={headerImage}
+                    className='m-auto w-full h-auto aspect-square object-cover object-center'
+                  />
+                </div>
 
-{post?.type === 'Post' && (
-  <div className='flex md:flex-row flex-col w-full justify-between py-4'>
-    <div
-      id='left-img'
-      className='md:w-1/2 flex justify-center items-center border'> {/* 保持图片宽度为容器宽度的一半 */}
-      <LazyImage
-        src={headerImage}
-        className='m-auto w-full h-auto aspect-square object-cover object-center' {/* 图片将自动缩放以适应容器 */}
-      />
-    </div>
-
-    <div id='info-right' className='md:w-1/2 p-4'> {/* 保持文字宽度为容器宽度的一半 */}
-      <div className='text-2xl font-bold'>{post?.title}</div> {/* 将标题字体大小设置为原来的两倍 */}
-      <div
-        className='text-lg' {/* 将摘要字体大小设置为原来的两倍 */}
-        dangerouslySetInnerHTML={{ __html: post?.summary }}>
-      </div>
-    </div>
-  </div>
-)}
-
-
+                <div id='info-right' className='md:w-3/4 p-4'>
+                  <div>{post?.title}</div>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: post?.summary }}></div>
+                </div>
+              </div>
 
 
 
