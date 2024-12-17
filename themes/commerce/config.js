@@ -11,7 +11,7 @@ const CONFIG = {
   COMMERCE_TEXT_FOOTER_MENU_2: '帮助', // COMMERCE主题页脚左侧菜单标题2
   // COMMERCE_TEXT_FOOTER_MENU_3: '法律支持', // COMMERCE主题页脚左侧菜单标题3
 
-  COMMERCE_FOOTER_RIGHT_IMG_URL: 'https://pic.imgdb.cn/item/67615971d0e0a243d4e57c5e.jpg', // 显示页脚右侧的图片，通常放二维码
+  COMMERCE_FOOTER_RIGHT_IMG_URL: 'https://pic.imgdb.cn/item/671b7382d29ded1a8c0f3b1d.png', // 显示页脚右侧的图片，通常放二维码
   COMMERCE_FOOTER_RIGHT_TEXT: '扫码进入官方小程序', // 页脚右侧图片下的文字描述
 
   COMMERCE_HOME_POSTS_COUNT: 6, // 首页展示商品数
