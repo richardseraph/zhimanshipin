@@ -130,7 +130,12 @@ const Footer = props => {
                     )}
                     
                     {JSON.parse(
-                      siteConfig('COMMERCE_CONTACT_XIAOHONGSHU_SHOW', true, CONFIG)
+                      siteConfig(
+                        'COMMERCE_CONTACT_XIAOHONGSHU_SHOW',
+                         null, 
+                         CONFIG
+                      ),
+                      true
                     ) && (
                       <div>
                         {
@@ -146,7 +151,7 @@ const Footer = props => {
                     )}
 
                     {JSON.parse(
-                      siteConfig('COMMERCE_CONTACT_TELEGRAM_SHOW', true, CONFIG)
+                      siteConfig('COMMERCE_CONTACT_TELEGRAM_SHOW', null, CONFIG),true
                     ) && (
                       <div>
                         {
@@ -162,7 +167,7 @@ const Footer = props => {
                     )}
 
                     {JSON.parse(
-                      siteConfig('COMMERCE_CONTACT_WEIBO_SHOW', true, CONFIG)
+                      siteConfig('COMMERCE_CONTACT_WEIBO_SHOW', null, CONFIG),true
                     ) && (
                       <div>
                         {
