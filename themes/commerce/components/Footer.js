@@ -1,4 +1,6 @@
-import { GongAnBeiAn } from '@/components/GongAnBeiAn'
+import { BeiAnGongAn } from '@/components/BeiAnGongAn'
+import BeiAnSite from '@/components/BeiAnSite'
+import CopyRightDate from '@/components/CopyRightDate'
 import { siteConfig } from '@/lib/config'
 import Link from 'next/link'
 import CONFIG from '../config'
@@ -181,7 +183,6 @@ const Footer = props => {
                         }
                       </div>
                     )}
-
                   </div>
                   <div className='text-lg'>
                     {' '}
@@ -206,6 +207,7 @@ const Footer = props => {
                         href={`mailto:${siteConfig('CONTACT_PHONE')}`}>
                         <i className='transform hover:scale-125 duration-150 fas fa-user dark:hover:text-red-400 hover:text-red-600' />{' '}
                         {siteConfig('CONTACT_PHONE')}
+
                         </a>
                     )}
                   </div>
@@ -249,14 +251,18 @@ const Footer = props => {
           <div className='text-start space-y-1'>
             {/* 网站所有者 */}
             <div>
-              {' '}
-              Copyright <i className='fas fa-copyright' /> {`${copyrightDate}`}{' '}
+              <CopyRightDate />
+            </div>
+
+            {/* 技术支持 */}
+            <div className='text-xs text-light-500 dark:text-gray-700'>
+              Powered by{' '}
               <a
-                href={siteConfig('LINK')}
-                className='underline font-bold  dark:text-gray-300 '>
-                {siteConfig('AUTHOR')}
-              </a>{' '}
-              All Rights Reserved.
+                href=''
+                className='dark:text-gray-300'>
+                NotionNext {siteConfig('VERSION')}
+              </a>
+              .
             </div>
 
             {/* 站点统计 */}
@@ -279,15 +285,10 @@ const Footer = props => {
             </h1>
             <h2> {siteConfig('DESCRIPTION')}</h2>
             {/* 可选备案信息 */}
-            {siteConfig('BEI_AN') && (
-              <>
-                <i className='fas fa-shield-alt' />{' '}
-                <a href='https://beian.miit.gov.cn/' className='mr-2'>
-                  {siteConfig('BEI_AN')}
-                </a>
-              </>
-            )}
-            <GongAnBeiAn />
+            <div className='flex flex-wrap'>
+              <BeiAnSite />
+              <BeiAnGongAn />
+            </div>
           </div>
         </div>
       </div>
