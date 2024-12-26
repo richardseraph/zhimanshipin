@@ -254,18 +254,7 @@ const Footer = props => {
             <div>
               <CopyRightDate />
             </div>
-{/* 
-            {/* 技术支持 */}
-            <div className='text-xs text-light-500 dark:text-gray-700'>
-              Powered by{' '}
-              <a
-                href=''
-                className='dark:text-gray-300'>
-                NotionNext {siteConfig('VERSION')}
-              </a>
-              .
-            </div>
-*/}
+
 
             {/* 站点统计 */}
             <div>
@@ -299,3 +288,16 @@ const Footer = props => {
 }
 
 export default Footer
+
+
+
+            // {/* 技术支持 */}
+            // <div className='text-xs text-light-500 dark:text-gray-700'>
+            //   Powered by{' '}
+            //   <a
+            //     href=''
+            //     className='dark:text-gray-300'>
+            //     NotionNext {siteConfig('VERSION')}
+            //   </a>
+            //   .
+            // </div>
