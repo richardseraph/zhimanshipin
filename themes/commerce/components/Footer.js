@@ -244,18 +244,18 @@ const Footer = props => {
           }
         </div>
 
-//        {/* 底部版权相关 */}
+        {/* 底部版权相关 */}
         <div
           id='footer-copyright-wrapper'
           className='flex flex-col md:flex-row justify-between border-t border-gray-600 pt-8 px-4 md:px-0'>
           <div className='text-start space-y-1'>
-//
+
             {/* 网站所有者 */}
             <div>
               <CopyRightDate />
             </div>
-
-//            {/* 技术支持 */}
+{/* 
+            {/* 技术支持 */}
             <div className='text-xs text-light-500 dark:text-gray-700'>
               Powered by{' '}
               <a
@@ -265,7 +265,8 @@ const Footer = props => {
               </a>
               .
             </div>
-//
+*/}
+
             {/* 站点统计 */}
             <div>
               <span className='hidden busuanzi_container_site_pv'>
