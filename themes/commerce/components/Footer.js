@@ -285,7 +285,7 @@ const Footer = props => {
             <h1 className='text-xs pt-4 text-light-400 dark:text-gray-400'>
               {siteConfig('TITLE')} {siteConfig('BIO')}
             </h1>
-            <h2> {siteConfig('DESCRIPTION')}</h2>
+            {/* <h2> {siteConfig('DESCRIPTION')}</h2> */}
             {/* 可选备案信息 */}
             <div className='flex flex-wrap'>
               <BeiAnSite />
